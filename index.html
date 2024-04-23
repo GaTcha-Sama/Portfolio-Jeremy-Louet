@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Portfolio Responsive by Jérémy Louët</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+<!--HEADER -->
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">À&nbsp;propos</a>
+            <a href="#services">Compétences</a>
+            <a href="#portfolio">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--SECTION HOME-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Bonjour, je me présente,</h3>
+            <h1>Jérémy Louët</h1>
+            <h3>Et je suis <span class="multiple-text"></span></h3>
+            <p>Bienvenue à toutes et à tous sur mon portfolio où vous pourrez prendre connaissance sur : <br>
+                <ul> 
+                    <li>mon histoire</li> 
+                    <li>mes acquis et compétences</li> 
+                    <li>mes projets pro ou perso</li> 
+                </ul>
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/jeremylouet/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/GaTcha-Sama" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/jeremylouetgatcha/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitch.tv/gatcha__" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+            <a href="images/CV Jérémy LOUËT - Dev Web.pdf" target="_blank" class="btn" download ><i class="fa-solid fa-download"></i>&nbsp;Télécharger le CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./images/1-Photoroom.png-Photoroom.png" alt="photo-profil">             
+        </div>
+    </section>
+
+    <!--SECTION A PROPOS-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/LTEvra.jpg" alt="about-img">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">À propos de <span>moi</span></h2>
+            <h3>Il était une fois...</h3>
+            <p>Ancien handballeur de haut-niveau, j'ai baigné dans le sport et les jeux vidéos depuis mon enfance. <br>
+            À mes 30 ans, et une carrière commencée à mes 17 ans, je dis stop au handball et je rejoins mon père dans son Bureau d'études en réseaux souples et reprend le flambeau dès ma deuxième année.<br>
+             Rentré dans le monde de la gérance, j'y ai fait 12 ans (ressenti 30) et à l'aube de mes 40 ans (la fameuse crise de la quarantaine), 
+             je décide de faire ce qui me plaît depuis longtemps : <br>
+            du<span> développement informatique</span>, ce fameux monde virtuel où la création de sites web, de logiciels, de jeux vidéos ou autres est possible. <br>
+            C'est pour cela que je me suis lancé dans une reconversion passionnante afin d'entamer ma nouvelle vie professionnelle avec pour objectif de devenir un jour Dev Full Stack puis, pourquoi pas à long terme, DevOps.</p>
+            <h3>Mes <span>passions</span></h3>
+            <div class="hobbies">
+            <p>NHL<i class="fa-solid fa-hockey-puck"></i>, NBA<i class="fa-solid fa-basketball"></i>, Rugby<i class="fa-solid fa-football"></i>, Handball<i class="fa-solid fa-futbol"></i>, Médias<i class="fa-solid fa-globe"></i>, Voyages<i class="fa-solid fa-plane-departure"></i>, Jeux Vidéos<i class="fa-solid fa-gamepad"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION COMPETENCES-->
+
+    <section class="services" id="services">
+        <h2 class="heading">Mes <span>Compétences</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-brands fa-html5" id="html5"></i><i class="fa-brands fa-css3-alt" id="css3"></i><i class="fa-brands fa-js" id="js"></i>
+                <h3>Dev Front End</h3>
+                <p><span>HTML/CSS</span> - Intégration de contenus conformes à une maquette Figma <br>
+                    <span>HTML/CSS</span> - Implémentation d'une interface responsive<br>
+                    <span>JavaScript</span> - Récupération de données utilisateurs via des formulaires <br>
+                    <span>JavaScript</span> - Manipulation d'éléments du DOM <br>
+                    <span>JavaScript</span> - Gestion dynamique des évènements utilisateurs <br>
+                   </p>
+                    <a href="#" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-java"></i><i class="fa-brands fa-python"></i><i class="fa-brands fa-node-js" id="node"></i>
+                <h3>Dev Back End</h3>
+                <p><span>Node.js</span> - API HTTP<br>
+                    <span>Java</span><br>
+                    <span>Python</span>
+                </p>
+                    <a href="#" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>Gestion de projets</h3>
+                <p><span>Opti & Debug</span> - Optimisation des performances d'un site <br>
+                    <span>Opti & Debug</span> - Débuggage avec Chrome DevTools <br>
+                    <span>Opti & Debug</span> - Rédaction d'un cahier de recette pour tester un site</p>
+                    <a href="#" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-people-roof"></i>
+                <h3>Management</h3>
+                <p><span>Gérance de société</span> - Bureau d'études pendant 12 ans <br>
+                    <span>Suivi d'affaires</span> - Planification, Conception, Méthode agile<br>
+                    <span>Suivi financier</span> - Appel d'offres, comptabilité des entreprises <br>
+                    <span>Relation clients</span> - Déplacements, meetings, conférences, séminaires<br>
+                    <span>Leadership</span> - Maintien de cohésion de groupe, RH, stages, formations <br>
+                </p>
+                    <a href="#" class="btn">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION PROJETS PRO PERSO-->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mes <span>Projets</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="booki">
+                <div class="portfolio-layer">
+                    <h4>Booki</h4>
+                    <p>Site de réservation hôtelière</p>
+                        <a href="https://github.com/GaTcha-Sama/Projet-2-Booki" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="bluel">
+                <div class="portfolio-layer">
+                    <h4>Sophie Bluel</h4>
+                    <p>Architecte d'intérieur</p>
+                        <a href="https://github.com/GaTcha-Sama/Projet-3-Bluel/tree/master" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="carducci">
+                <div class="portfolio-layer">
+                    <h4>Nina Carducci</h4>
+                    <p>Photographe freelance</p>
+                        <a href="https://github.com/GaTcha-Sama/Projet-4-Nina-Carducci" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION CONTACT-->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contactez <span>moi!</span></h2>
+        <h3>jeremy.louet29@hotmail.fr</h3>
+        <h3>06.42.86.81.51</h3>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nom Prénom">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Téléphone">
+                <input type="text" placeholder="Sujet">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
+        </form>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 par Jérémy Louët | Tous droits réservés.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!--LIENS JS-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
