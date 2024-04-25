@@ -274,12 +274,18 @@ span {
     color: blue;
 }
 
-#js {
+#js,
+#python {
     color: yellow;
 }
 
 #node {
     color: green;
+}
+
+#php,
+#java {
+    color: cornflowerblue;
 }
 
 .services-box h3 {
