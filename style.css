@@ -197,12 +197,13 @@ span {
 
 .about-img img {
     display: flex;
-    height: 450px;
+    flex-wrap: wrap;
+    height: auto;
     width: 500px;
-    margin-right: 50px;
+    margin-bottom: 70px;
     border: none;
-    background-color: var(--second-bg-color);
     border-radius: 4rem;
+    min-width: 100%;
 }
 
 .heading {
@@ -472,6 +473,10 @@ span {
     }
 }
 
+    .about-img {
+        display: flex;
+    }
+
 @media (max-width: 991px) { 
     .header {
         padding: 2rem 3%;
@@ -503,6 +508,8 @@ span {
     }
 
     .about-img img {
+        display: flex;
+        flex-wrap: wrap;
         max-height: 300px;
         border-radius: 4rem;
     }
@@ -555,6 +562,12 @@ span {
 
     .home-img img {
         display: none;
+    }
+
+    .about-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .about {
