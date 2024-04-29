@@ -66,3 +66,27 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+// Affichage projets bouton "En savoir plus" //
+
+document.addEventListener("DOMContentLoaded", function() {
+    let buttonMore = document.querySelectorAll("#more");
+    let description = document.querySelectorAll(".services-description");
+  
+    buttonMore.forEach((button, index) => {
+      button.addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        // Obtenir la description correspondante au bouton cliqué
+        let currentDescription = description[index];
+  
+        if (currentDescription.style.display === "none") {
+          currentDescription.style.display = "block";
+          button.textContent = "Réduire";
+        } else {
+          currentDescription.style.display = "none";
+          button.textContent = "En savoir plus";
+        }
+        
+      });
+    });
+  });

@@ -267,6 +267,14 @@ span {
     padding: 10px;
 }
 
+.services-box a {
+    display: none;
+}
+
+.services-box p {
+    display: block;
+}
+
 #html5 {
     color: red;
 }
@@ -572,6 +580,16 @@ span {
 
     .about {
         flex-direction: column;
+    }
+
+    .services-box p {
+        display: none;
+    }
+
+    .services-box a {
+        display: block;
+        margin-top: 20px;
+        cursor: pointer;
     }
 
     .services h2 {
