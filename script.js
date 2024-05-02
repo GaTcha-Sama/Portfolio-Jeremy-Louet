@@ -1,12 +1,22 @@
 // Toggle icon navbar //
 
-let menuIcon = document.querySelector('#menu-icon');
+let menuIconBar = document.querySelector('#menu-icon');
+let menuIconX = document.querySelector('fa-xmark');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark');
+menuIconBar.onclick = () => {
+    menuIconBar.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
-}
+    navbar.style.display = "block";
+};
+
+menuIconX.onclick = () => {
+    menuIconX.classList.toggle('fa-bars');
+    navbar.classList.toggle('inactive');
+    navbar.style.display = "none";    
+};
+
+
 
 
 // Pour le scroll des sections //
@@ -37,12 +47,15 @@ window.onscroll = () => {
 
 // Remove toggle icon and navbar au click sur la navbar lors du scroll //
 
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
     menuIcon.classList.remove('.fa-xmark');
     navbar.classList.remove('active');
 
 };
 
-// sticky navbar //
+// Scroll reveal des différentes sections //
 
 ScrollReveal({
     reset: true,
@@ -56,7 +69,7 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {origin: 'right'});
 
-// Défilement texte //
+// Défilement texte de présentation //
 
 const typed = new Typed('.multiple-text', {
     strings: ['Développeur Web et Mobile', 'Développeur Back End', 'un futur Dev Full Stack'],
@@ -66,7 +79,7 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-// Affichage projets bouton "En savoir plus" //
+// Affichage projets bouton "En savoir plus"-"Réduire" //
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttonMore = document.querySelectorAll("#more");
@@ -74,8 +87,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     buttonMore.forEach((button, index) => {
       button.addEventListener("click", function(e) {
+        console.log(e, "bouton cliqué");
         e.stopPropagation();
-        e.preventDefault();
+       // e.preventDefault();
         // Obtenir la description correspondante au bouton cliqué
         let currentDescription = description[index];
   
