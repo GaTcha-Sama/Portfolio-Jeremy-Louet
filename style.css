@@ -292,7 +292,10 @@ span {
     color: green;
 }
 
-#php,
+#php {
+    color: #777BB3;
+}
+
 #java {
     color: cornflowerblue;
 }
@@ -382,6 +385,11 @@ span {
     height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
+}
+
+.portfolio-layer i {
+    font-size: 5em;
+    padding: 10px;
 }
 
 .portfolio-layer a i {
