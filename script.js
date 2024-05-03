@@ -16,9 +16,6 @@ menuIconX.onclick = () => {
     navbar.style.display = "none";    
 };
 
-
-
-
 // Pour le scroll des sections //
 
 let sections = document.querySelectorAll('section');
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
       button.addEventListener("click", function(e) {
         console.log(e, "bouton cliqué");
         e.stopPropagation();
-       // e.preventDefault();
+
         // Obtenir la description correspondante au bouton cliqué
         let currentDescription = description[index];
   
