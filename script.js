@@ -72,7 +72,7 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-img, .techno-box, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {origin: 'right'}); 
 
@@ -84,7 +84,10 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
         backSpeed: 100,
         backDelay: 1000,
         loop: true
-    })
+    });
+
+
+
 });
 
 /* / Toggle icon navbar //
