@@ -788,6 +788,11 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .techno-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 617px) {
@@ -806,6 +811,16 @@ span {
 
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .tools-box {
+        width: 100%;
+        max-width: calc(100% / 2 - 1rem);
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 20px;
+        border: solid black 1px;
+        margin: 1px;
     }
 
     .footer {
