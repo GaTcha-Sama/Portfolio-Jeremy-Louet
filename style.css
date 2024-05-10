@@ -285,7 +285,8 @@ span {
     transition: .5s ease;
 }
 
-.services-container .services-box:hover {
+.techno-container .techno-box:hover,
+.tools-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
