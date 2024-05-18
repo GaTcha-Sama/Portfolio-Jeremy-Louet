@@ -329,6 +329,7 @@ span {
 }
 
 .notion,
+.flask,
 .swagger,
 .postman,
 .mongodb
@@ -391,6 +392,7 @@ span {
     background-image: linear-gradient(to bottom, orange, lightgrey );
 }
 
+#tool-flask,
 #tool-notion {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
@@ -607,7 +609,7 @@ span {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: white;
+    color: black;
     background: var(--text-color);
     border-radius: .8rem;
     margin: .7rem 0;
@@ -619,6 +621,7 @@ span {
 
 .contact form textarea {
     resize: none;
+    color: black;
 }
 
 .contact form .btn {
