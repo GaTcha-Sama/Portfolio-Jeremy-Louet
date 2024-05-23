@@ -459,6 +459,7 @@ span {
     color: yellow;
 }
 
+#mongodb,
 #node {
     color: green;
 }
