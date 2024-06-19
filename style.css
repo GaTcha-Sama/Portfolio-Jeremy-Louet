@@ -331,6 +331,7 @@ span {
 .notion,
 .flask,
 .swagger,
+.typescript,
 .postman,
 .mongodb
  {
@@ -343,6 +344,7 @@ span {
     background-image: linear-gradient(to bottom, red, lightgrey );
 }
 
+#tool-ts,
 #tool-css {
     background-image: linear-gradient(to bottom, blue, lightgrey );
 }
