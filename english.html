@@ -173,11 +173,11 @@
             <div class="services-box" id="management">
                 <i class="fa-solid fa-people-roof"></i>
                 <h3>Management</h3>
-                <p class="services-description"><span>CEO Company management</span> - Design office for 12 years <br>
-                    <span>Business monitoring</span> - Planning, Design, Agile method<br>
+                <p class="services-description"><span>Business management</span> - Scrum and agile methodology, Kanban<br>
+                    <span>Business monitoring</span> - Planning, Organization<br>
                     <span>Financial monitoring</span> - Call for tenders, business accounting <br>
                     <span>Customer relations</span> - Travel, meetings, conferences, seminars<br>
-                    <span>Leadership</span> - Maintaining group cohesion, HR, internships, trainings <br>
+                    <span>Leadership</span> - Maintaining group cohesion, internships, trainings <br>
                 </p>
                     <a class="btn" id="more">More</a>
             </div>
@@ -228,7 +228,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/1-Photoroom.png-Photoroom.png" alt="portfolio-project">
+                <img src="images/portfolio.jpg" alt="portfolio-project">
                 <div class="portfolio-layer">
                     <div><i class="fa-brands fa-html5" id="html5"></i><i class="fa-brands fa-css3-alt" id="css3"></i><i class="fa-brands fa-js" id="js"></i></div>
                     <h4>Jérémy Louët</h4>
@@ -304,22 +304,23 @@
     <!--SECTION CONTACT-->
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>me!</span></h2>
+        <h2 class="heading">Contactez <span>moi!</span></h2>
         <h3>jeremy.louet29@hotmail.fr</h3>
-        <h3>+336.42.86.81.51</h3>
-        <form action="#">
+        <h3>06.42.86.81.51</h3>
+        <form action="http://localhost:4000/send" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="First name Last name">
-                <input type="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone">
-                <input type="text" placeholder="Subject">
+                <input type="number" name="phone" placeholder="Phone" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Submit" class="btn">
         </form>
     </section>
+    
 
     <!--FOOTER-->
 

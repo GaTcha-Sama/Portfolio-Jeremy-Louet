@@ -770,7 +770,9 @@ span {
     }
 
     .home-img img {
-        display: none;
+        margin: 0;
+        margin-top: 50px;
+        margin-left: -50px;
     }
 
     .about-img {
@@ -781,6 +783,16 @@ span {
 
     .about {
         flex-direction: column;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services-box {
+        width: 100%;
     }
 
     .services-box p {
@@ -802,7 +814,7 @@ span {
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .techno-container {
