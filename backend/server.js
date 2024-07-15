@@ -1,44 +1,48 @@
+require('dotenv').config(); // Charger les variables d'environnement
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const dotenv = require('dotenv');
-
-dotenv.config();
 
 const app = express();
+const port = process.env.PORT || 4000;
 
-// Middleware pour analyser les données des formulaires
+// Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Configurer le transporteur pour nodemailer
-const transporter = nodemailer.createTransport({
-  service: 'hotmail', 
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD
-  }
-});
-
-// Route pour traiter les soumissions de formulaires
+// Route pour traiter le formulaire
 app.post('/send', (req, res) => {
-  const mailOptions = {
-    from: req.body.email,
+  const { name, email, phone, subject, message } = req.body;
+
+  // Configurer le transporteur d'e-mail
+  let transporter = nodemailer.createTransport({
+    service: 'hotmail', // Utilisez 'hotmail' pour Outlook/Hotmail
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
+    }
+  });
+
+  // Options de l'e-mail
+  let mailOptions = {
+    from: process.env.EMAIL_USER,
     to: 'jeremy.louet29@hotmail.fr',
-    subject: req.body.subject,
-    text: `Nom: ${req.body.name}\nTéléphone: ${req.body.phone}\nMessage: ${req.body.message}`
+    subject: `Nouveau message de ${name}: ${subject}`,
+    text: `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\n\nMessage:\n${message}`
   };
 
+  // Envoyer l'e-mail
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return res.status(500).send(error.toString());
+      console.log(error);
+      res.status(500).send('Une erreur est survenue');
+    } else {
+      console.log('Email envoyé: ' + info.response);
+      res.status(200).send('Message envoyé avec succès');
     }
-    res.status(200).send('Message envoyé!');
   });
 });
 
-// Démarrer le serveur
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Serveur en écoute sur le port ${port}`);
 });
