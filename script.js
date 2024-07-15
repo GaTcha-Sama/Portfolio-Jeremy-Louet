@@ -92,18 +92,12 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
 
 // Toggle icon navbar //
 
-let menuIconBar = document.querySelector('#menu-icon');
-let menuIconX = document.querySelector('fa-xmark');
-let navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', () => {
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
 
-menuIconBar.onclick = () => {
-    menuIconBar.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
-    navbar.style.display = "block";
-};
-
- menuIconX.onclick = () => {
-    menuIconX.classList.toggle('fa-bars');
-    navbar.classList.toggle('inactive');
-    navbar.style.display = "none";    
-};
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('fa-xmark');
+        navbar.classList.toggle('active');
+    };
+});
