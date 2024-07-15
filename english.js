@@ -79,7 +79,7 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
 // Défilement texte de présentation //
 
     const typed = new Typed('.multiple-text', {
-        strings: ['Web Developer', 'Back End Developer', 'future Full Stack Developer'],
+        strings: ['Web Developer', 'Back End Developer', 'future Full Stack Engeneer'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

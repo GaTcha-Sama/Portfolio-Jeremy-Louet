@@ -90,6 +90,7 @@ section {
 }
 
 .home-img {
+    margin-left: 100px;
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -691,6 +692,10 @@ span {
         padding: 2rem 3%;
     }
 
+    .home-img {
+        margin-left: 0;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -744,10 +749,10 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        display:none;
     }
 
-    .navbar .active {
+    .navbar.active {
         display: block;
     }
 

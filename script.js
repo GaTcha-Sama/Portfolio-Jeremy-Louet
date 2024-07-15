@@ -79,7 +79,7 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
 // Défilement texte de présentation //
 
     const typed = new Typed('.multiple-text', {
-        strings: ['Développeur Web et Mobile', 'Développeur Back End', 'un futur Dev Full Stack'],
+        strings: ['Développeur Web et Mobile', 'Développeur Back End', 'un futur Ingénieur Full Stack'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
@@ -90,7 +90,7 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
 
 });
 
-/* / Toggle icon navbar //
+// Toggle icon navbar //
 
 let menuIconBar = document.querySelector('#menu-icon');
 let menuIconX = document.querySelector('fa-xmark');
@@ -106,4 +106,4 @@ menuIconBar.onclick = () => {
     menuIconX.classList.toggle('fa-bars');
     navbar.classList.toggle('inactive');
     navbar.style.display = "none";    
-}; */
+};
