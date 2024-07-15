@@ -85,9 +85,6 @@ ScrollReveal().reveal('.home-content p, .home-content li, .about-content', {orig
         backDelay: 1000,
         loop: true
     });
-
-
-
 });
 
 // Toggle icon navbar //
