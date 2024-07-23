@@ -346,7 +346,8 @@ span {
 }
 
 #tool-ts,
-#tool-css {
+#tool-css,
+#tool-jira {
     background-image: linear-gradient(to bottom, blue, lightgrey );
 }
 
@@ -360,6 +361,10 @@ span {
 
 #tool-react {
     background-image: linear-gradient(to bottom, var(--main-color), lightgrey );
+}
+
+#tool-php {
+    background-image: linear-gradient(to bottom, cornflowerblue, lightgrey );
 }
 
 #tool-java {
@@ -590,6 +595,8 @@ span {
     font-size: 2.5rem;
     color: var(--second-bg-color);
 }
+
+/* MODAL */
 
 /* Modal container */
 .modal {
