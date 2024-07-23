@@ -98,3 +98,45 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     };
 });
+
+// MODALE //
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all portfolio boxes
+  const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+
+  // Add click event to each portfolio box to open the corresponding modal
+  portfolioBoxes.forEach(box => {
+      box.addEventListener("click", function() {
+          const projectName = this.querySelector("h4").textContent.trim().toLowerCase().replace(/\s+/g, '-');
+          const modalId = `modal-${projectName}`;
+          const modal = document.getElementById(modalId);
+          if (modal) {
+              modal.style.display = "block";
+          } else {
+              console.log(`No modal found for ${projectName}`);
+          }
+      });
+  });
+
+  // Get all close buttons
+  const closeButtons = document.querySelectorAll(".close");
+
+  // Add click event to each close button to close the modal
+  closeButtons.forEach(button => {
+      button.addEventListener("click", function() {
+          const modalId = this.getAttribute('data-modal');
+          const modal = document.getElementById(modalId);
+          if (modal) {
+              modal.style.display = "none";
+          }
+      });
+  });
+
+  // Close the modal if the user clicks outside of the modal
+  window.addEventListener("click", function(event) {
+      if (event.target.classList.contains('modal')) {
+          event.target.style.display = "none";
+      }
+  });
+});
