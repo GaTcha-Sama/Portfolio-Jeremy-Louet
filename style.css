@@ -334,7 +334,9 @@ span {
 .swagger,
 .typescript,
 .postman,
-.mongodb
+.mongodb,
+.express,
+.mysql
  {
     height: 65px;
     width: 85px;
@@ -375,6 +377,7 @@ span {
     background-image: linear-gradient(to top, yellow, rgb(34, 161, 204) );
 }
 
+#tool-express,
 #tool-node,
 #tool-mongodb {
     background-image: linear-gradient(to bottom, green, lightgrey );
@@ -404,6 +407,11 @@ span {
 #tool-notion {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
+
+#tool-mysql {
+    background-image: linear-gradient(to bottom, cornflowerblue, orange );
+}
+
 /*SKILLS*/
 
 .services {
