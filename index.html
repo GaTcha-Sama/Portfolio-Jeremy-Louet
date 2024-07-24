@@ -51,9 +51,6 @@
 			"priceRange": "500€ 2000€",
 			"address": {
 				"@type": "PostalAddress",
-				"streetAddress": "8 lotissement An Duchen",
-				"addressLocality": "Rosnoën",
-				"postalCode": "29590",
 				"addressCountry": "FR"
 			},
 			"geo": {
@@ -73,6 +70,37 @@
 				"opens": "9:00",
 				"closes": "18:00"
 			},
+            "areaServed": [
+		{
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "FR"
+			}
+		},
+		{
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "CH"
+			}
+		},
+		{
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "BE"
+			}
+		},
+		{
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "CA",
+				"addressRegion": "QC"
+			}
+		}
+	],
 			"sameAs": "https://www.instagram.com/jeremylouetgatcha/"
 		}
 	</script>
@@ -438,11 +466,12 @@
         </div>
     </div>
     
-    <div id="modal-jeremy-louet" class="modal">
+    <div id="modal-jérémy-louët" class="modal">
         <div class="modal-content">
-            <span class="close" data-modal="modal-jeremy-louet">&times;</span>
-            <h4>Description du projet Jeremy Louet</h4>
-            <p>Création from scratch de ce portfolio en HTML, CSS et JS et publication et mise en ligne via Github Pages</p>
+            <span class="close" data-modal="modal-jérémy-louët">&times;</span>
+            <h4>Description du projet Portfolio</h4>
+            <img src="images/portfolio.jpg" alt="portfolio-project">
+            <p>Création from scratch de ce portfolio en HTML, CSS et JS puis publication et mise en ligne via Github Pages</p>
             <div class="modal-icon">
                 <div class="tools-box" id="tool-html"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
                 <div class="tools-box" id="tool-css"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
@@ -456,12 +485,13 @@
             <span class="close" data-modal="modal-la-maison-jungle">&times;</span>
             <h4>Description du projet La Maison Jungle</h4>
             <img src="images/maison jungle.png" alt="maison-jungle">
-            <p>Dans ce projet, j'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.
+            <p>Dans cet exercice OpenClassrooms, j'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.
                 J'ai travaillé sur la logique de présentation des données et les composants React, la bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.
                 J'ai utilisé React Router pour configurer la navigation entre les différentes pages de l'application.
                 </p>
                 <div class="modal-icon">
                     <div class="tools-box" id="tool-react"><i class="fa-brands fa-react"></i><span>React</span></div>
+                    <div class="tools-box" id="tool-js"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
                     <div class="tools-box" id="tool-css"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
                 </div>
         </div>
@@ -503,11 +533,16 @@
         </div>
     </div>
     
-    <div id="modal-vendremesobjetscom" class="modal">
+    <div id="modal-vendremesobjets.com" class="modal">
         <div class="modal-content">
-            <span class="close" data-modal="modal-vendremesobjetscom">&times;</span>
+            <span class="close" data-modal="modal-vendremesobjets.com">&times;</span>
             <h4>Description du projet VendreMesObjets.com</h4>
+            <img src="images/LTEvra.jpg" alt="vendre-mes-objets">
             <p>Exercice OpenClassrooms sur la création du backend d'un site de vente</p>
+            <div class="modal-icon">
+                <div class="tools-box" id="tool-node"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                <div class="tools-box" id="tool-mongodb"><img src="./images/mongodb.svg" alt="mongodb" class="mongodb"><span>MongoDB</span></div>
+            </div>
         </div>
     </div>
     
@@ -566,8 +601,8 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contactez <span>moi!</span></h2>
-        <h3>jeremy.louet29@hotmail.fr</h3>
-        <h3>06.42.86.81.51</h3>
+        <h3 itemprop="email">jeremy.louet29@hotmail.fr</h3>
+        <h3 itemprop="phone">06.42.86.81.51</h3>
         <form action="https://formspree.io/f/mblrdyqe" method="POST">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Nom Prénom" required>
