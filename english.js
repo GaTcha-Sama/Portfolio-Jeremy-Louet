@@ -1,26 +1,24 @@
 // Affichage projets bouton "En savoir plus"-"Réduire" //
 
 document.addEventListener("DOMContentLoaded", function() {
-    let buttonMore = document.querySelectorAll("#more");
-    let description = document.querySelectorAll(".services-description");
-  
-    buttonMore.forEach((button, index) => {
-      button.addEventListener("click", function(e) {
-        console.log(e, "bouton cliqué");
-        e.stopPropagation();
+    let buttonsMore = document.querySelectorAll("#more");
+    let descriptions = document.querySelectorAll(".services-description");
 
-        // Obtenir la description correspondante au bouton cliqué
-        let currentDescription = description[index];
-  
-        if (currentDescription.style.display === "none") {
-          currentDescription.style.display = "block";
-          button.textContent = "Réduire";
-        } else {
-          currentDescription.style.display = "none";
-          button.textContent = "En savoir plus";
-        }
-        
-      });
+    buttonsMore.forEach((button, index) => {
+        button.addEventListener("click", function(e) {
+            e.stopPropagation();
+
+            // Obtenir la description correspondante au bouton cliqué
+            let currentDescription = descriptions[index];
+
+            if (currentDescription.style.display === "none" || currentDescription.style.display === "") {
+                currentDescription.style.display = "block";
+                button.textContent = "Réduire";
+            } else {
+                currentDescription.style.display = "none";
+                button.textContent = "More";
+            }
+        });
     });
 });
 

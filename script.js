@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function(e) {
             e.stopPropagation();
 
+            // Obtenir la description correspondante au bouton cliqué
             let currentDescription = descriptions[index];
 
-            // Ajouter cette ligne pour vérifier l'état initial
             if (currentDescription.style.display === "none" || currentDescription.style.display === "") {
                 currentDescription.style.display = "block";
                 button.textContent = "Réduire";
