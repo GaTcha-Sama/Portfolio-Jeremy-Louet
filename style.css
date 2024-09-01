@@ -336,7 +336,8 @@ span {
 .postman,
 .mongodb,
 .express,
-.mysql
+.mysql,
+.vercel
  {
     height: 65px;
     width: 85px;
@@ -404,7 +405,8 @@ span {
 }
 
 #tool-flask,
-#tool-notion {
+#tool-notion,
+#tool-vercel {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
 
