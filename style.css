@@ -337,7 +337,8 @@ span {
 .mongodb,
 .express,
 .mysql,
-.vercel
+.vercel,
+.eclipse
  {
     height: 65px;
     width: 85px;
@@ -412,6 +413,10 @@ span {
 
 #tool-mysql {
     background-image: linear-gradient(to bottom, cornflowerblue, orange );
+}
+
+#tool-eclipse {
+    background-image: linear-gradient(to bottom, blue, orange );
 }
 
 /*SKILLS*/
