@@ -691,6 +691,13 @@ span {
     margin-bottom: 10px;
   }
 
+  /* Modal link */
+
+  .modal-link a{
+    height: 300px;
+    width: 100px;
+  }
+
   /* Close button */
   .close {
     color: black;
