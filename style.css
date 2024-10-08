@@ -393,6 +393,10 @@ span {
     background-image: linear-gradient(to bottom, rgb(156, 11, 161), lightgrey );
 }
 
+#tool-gitlab {
+    background-image: linear-gradient(to bottom, rgb(255, 60, 0), rgb(255, 196, 0));
+}
+
 #tool-figma {
     background-image: linear-gradient(to bottom, rgb(190, 76, 24), purple, rgb(27, 156, 96) );
 }
