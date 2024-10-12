@@ -338,7 +338,8 @@ span {
 .express,
 .mysql,
 .vercel,
-.eclipse
+.eclipse,
+.tailwindcss
  {
     height: 65px;
     width: 85px;
@@ -361,6 +362,10 @@ span {
 
 #tool-sass {
     background-image: linear-gradient(to bottom, violet, lightgrey );
+}
+
+#tool-tailwind {
+    background-image: linear-gradient(to bottom, rgb(14, 134, 182), lightgrey );
 }
 
 #tool-react {
@@ -411,7 +416,8 @@ span {
 
 #tool-flask,
 #tool-notion,
-#tool-vercel {
+#tool-vercel,
+#tool-symfony {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
 
