@@ -339,7 +339,8 @@ span {
 .mysql,
 .vercel,
 .eclipse,
-.tailwindcss
+.tailwindcss,
+.django
  {
     height: 65px;
     width: 85px;
@@ -388,6 +389,10 @@ span {
 #tool-node,
 #tool-mongodb {
     background-image: linear-gradient(to bottom, green, lightgrey );
+}
+
+#tool-django {
+    background-image: linear-gradient(to bottom, rgb(3, 68, 49), lightgrey );
 }
 
 #tool-git {
