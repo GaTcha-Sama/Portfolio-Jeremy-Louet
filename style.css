@@ -340,7 +340,9 @@ span {
 .vercel,
 .eclipse,
 .tailwindcss,
-.django
+.django,
+.twig,
+.dbeaver
  {
     height: 65px;
     width: 85px;
@@ -411,6 +413,7 @@ span {
     background-image: linear-gradient(to bottom, rgb(190, 76, 24), purple, rgb(27, 156, 96) );
 }
 
+#tool-twig,
 #tool-swagger {
     background-image: linear-gradient(to bottom, rgb(90, 204, 124), lightgrey );
 }
@@ -424,6 +427,10 @@ span {
 #tool-vercel,
 #tool-symfony {
     background-image: linear-gradient(to bottom, black, lightgrey );
+}
+
+#tool-dbeaver {
+    background-image: linear-gradient(to bottom, brown, lightgrey);
 }
 
 #tool-mysql {
