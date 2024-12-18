@@ -299,6 +299,10 @@ span {
     margin-bottom: 4rem;
 }
 
+.techno-box-title {
+    margin-top: 30px;
+}
+
 .tools-box {
     width: 100%;
     max-width: calc(100% / 3 - 1rem);
