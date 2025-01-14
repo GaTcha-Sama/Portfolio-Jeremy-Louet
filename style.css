@@ -346,7 +346,8 @@ span {
 .tailwindcss,
 .django,
 .twig,
-.dbeaver
+.dbeaver,
+.flutter
  {
     height: 65px;
     width: 85px;
@@ -371,7 +372,8 @@ span {
     background-image: linear-gradient(to bottom, violet, lightgrey );
 }
 
-#tool-tailwind {
+#tool-tailwind,
+#tool-flutter {
     background-image: linear-gradient(to bottom, rgb(14, 134, 182), lightgrey );
 }
 
