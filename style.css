@@ -348,7 +348,8 @@ span {
 .twig,
 .dbeaver,
 .flutter,
-.postgresql
+.postgresql,
+.drupal
  {
     height: 65px;
     width: 85px;
@@ -375,7 +376,8 @@ span {
 
 #tool-tailwind,
 #tool-flutter,
-#tool-postgresql {
+#tool-postgresql,
+#tool-drupal {
     background-image: linear-gradient(to bottom, rgb(14, 134, 182), lightgrey );
 }
 
