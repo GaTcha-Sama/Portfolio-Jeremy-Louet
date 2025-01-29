@@ -349,7 +349,8 @@ span {
 .dbeaver,
 .flutter,
 .postgresql,
-.drupal
+.drupal,
+.talend
  {
     height: 65px;
     width: 85px;
@@ -391,6 +392,10 @@ span {
 
 #tool-java {
     background-image: linear-gradient(to bottom, red, cornflowerblue );
+}
+
+#tool-talend {
+    background-image: linear-gradient(to bottom, rgb(231, 83, 83), lightgrey );
 }
 
 #tool-python {
