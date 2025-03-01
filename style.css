@@ -350,8 +350,8 @@ span {
 .flutter,
 .postgresql,
 .drupal,
-.talend
- {
+.talend,
+.nextjs {
     height: 65px;
     width: 85px;
     margin: 10px;
@@ -440,7 +440,8 @@ span {
 #tool-flask,
 #tool-notion,
 #tool-vercel,
-#tool-symfony {
+#tool-symfony,
+#tool-nextjs {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
 
