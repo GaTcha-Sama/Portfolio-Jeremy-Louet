@@ -351,13 +351,16 @@ span {
 .postgresql,
 .drupal,
 .talend,
-.nextjs {
+.nextjs,
+.balsamiq,
+.angular {
     height: 65px;
     width: 85px;
     margin: 10px;
 }
 
-#tool-html {
+#tool-html,
+#tool-angular {
     background-image: linear-gradient(to bottom, red, lightgrey );
 }
 
@@ -445,7 +448,8 @@ span {
     background-image: linear-gradient(to bottom, black, lightgrey );
 }
 
-#tool-dbeaver {
+#tool-dbeaver,
+#tool-balsamiq {
     background-image: linear-gradient(to bottom, brown, lightgrey);
 }
 
